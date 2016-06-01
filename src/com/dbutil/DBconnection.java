@@ -19,7 +19,7 @@ public class DBconnection extends SQLiteOpenHelper {
 	}
 
 	public void onCreate(SQLiteDatabase db) {
-		String sql = "create table diary(" + "id int primary key auto_increment,"
+		String sql = "create table diary(" + "id integer primary key autoincrement,"
 				+ "date date,"
 				+ "mood varchar(5),"
 				+ "weather varchar(8),"

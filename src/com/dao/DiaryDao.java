@@ -11,8 +11,13 @@ import android.database.sqlite.SQLiteDatabase;
 import com.dbutil.DBconnection;
 import com.model.Diary;
 
-public class DiaryDao {
 
+/*
+ * 对数据的增、删、改、查
+ * 
+ */
+public class DiaryDao {
+	
 	private static DBconnection connection;
 	private static SQLiteDatabase db;
 	
@@ -24,7 +29,10 @@ public class DiaryDao {
 		db = connection.getConnection();
 	}
 	
-	
+	/*
+	 * 得到所有日记
+	 * 
+	 */
 	public  static List<Diary> getDiaryList() throws Exception {
 			List<Diary> diaryList = new ArrayList<Diary>();
 			Cursor cur = db.query("Diary", null, null, null, null, null, null);
