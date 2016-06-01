@@ -50,6 +50,9 @@ public class Diary {
 		this.lastUpdate = lastupdate;
 	}
 
+	public Diary() {
+	}
+
 	public int getId() {
 		return id;
 	}
