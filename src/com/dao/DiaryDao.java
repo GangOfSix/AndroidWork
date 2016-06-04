@@ -212,7 +212,7 @@ public class DiaryDao {
 			
 			String sql = "INSERT INTO diary( date, mood, weather, title, content, lastupdate)" 
 					+ "VALUES('" + date + "','" + mood + "','"+ weather + "','" 
-					+ title + "','" + content + "','" + lastUpdate + "')";
+					+ title + "','" + content + "','" + lastUpdate + "');";
 			
 			db.execSQL(sql);
 			

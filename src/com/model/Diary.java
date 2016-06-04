@@ -19,13 +19,16 @@ public class Diary {
 	 * @param title ±êÌâ
 	 * @param content ÄÚÈİ
 	 */
-	public Diary(String mood, String weather, String title,
-			String content) {
+	public Diary(Date date,String mood, String weather, String title,
+			String content,Date lastUpdate) {
+		
 		super();
+		this.date = date;
 		this.mood = mood;
 		this.weather = weather;
 		this.title = title;
 		this.content = content;
+		this.lastUpdate = lastUpdate;
 	}
 	
 	/**

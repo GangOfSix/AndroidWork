@@ -25,7 +25,7 @@ public class DBconnection extends SQLiteOpenHelper {
 				+ "weather varchar(8),"
 				+ "title varchar(10),"
 				+ "content text,"
-				+ "lastupdate date;";
+				+ "lastupdate date);";
 		db.execSQL(sql);
 	}
 
